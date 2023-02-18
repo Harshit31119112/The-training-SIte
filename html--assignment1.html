@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Assignment 1</title>
+    <style>
+        /* navbar of home page */
+.main{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid blue;
+}
+.main img{
+
+    width: 5%; 
+}
+
+.main li{
+    display: inline;
+    list-style: none;
+    padding: 1px;
+    
+}
+.main a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: auto;
+}
+/* media querry for the html page */
+@media only screen and (max-width:600px )
+{
+    .main{
+        text-align: left;
+        background-color: black;
+        color: white;
+        display: block;
+        border-bottom: 1px solid blue;
+        
+    }
+    .main img{
+        
+        width: 20%; 
+        padding: 3%;
+    }
+    
+    .main li{
+        display: block;
+        list-style: none;
+        padding: 1px;
+        
+    }
+    .main a{
+        text-decoration: none;
+        color: aliceblue;
+    }  
+}
+
+.leftmain{
+    display: flex;
+}
+.leftbar{
+    width: 20%;
+    background-color:gainsboro ;
+    height: 700px;
+}
+
+@media only screen and (max-width:600px )
+{
+    .leftbar{
+        width: 100%;
+        background-color:gainsboro ;
+        height: 150px;
+    }
+    .leftmain{
+        display: block;
+        
+    }
+ 
+
+}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <img src="/Source/radix.png" alt="logo image">
+        <div class="nav">
+            <ul>
+                <li><a href="/Source/index.html">Home</a></li>
+                <li><a href="/Source/html.html">HTML</a></li>
+                <li><a href="/Source/css.">CSS</a></li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">Javascript</a></li>
+                <li><a href="">JQuery</a></li>
+                <li><a href="">Mini Project</a></li>
+                <li><a href="">Sql</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftmain">
+        <div class="leftbar">
+            <ul>
+                <li>Day 3
+                    <ul>
+                        <li>Assignment 
+                            <ul>
+                                <li>
+                                <a href="/Source/html--assignment1.html"> Assignment 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Practice
+                            <ul>
+                                <li><a href="/Source/html-practice1.html">Practice 1</a></li>
+                                <li><a href="/Source/html--practice2.html">Practice 2</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+        <div class="assignment1">
+            <h1>Employee details</h1>
+            <form>
+            Employee name:<br>
+            <input type="text" required> <br><br>
+
+            age:<br>
+            <input type="number" required><br><br>
+            Gender:<br>
+                Male
+                <input type="radio" name="gender" value="Male" required><br>
+                Female
+                <input type="radio" name="gender" value="Female" required><br><br>
+            Designation:<br>
+            <input type="text" required><br><br>
+            Salary:<br>
+            <input type="number" required><br><br>
+            Location:<br>
+            <select name="Location" id="cars">
+                <option value="nepal">Nepal</option>
+                <option value="Tibet">Tibet</option>
+                <option value="Gwalior">Gwalior</option>
+                <option value="Agra">Agra</option>
+            </select>
+            Email:<br>
+            <input type="email" required><br><br>
+            Date of joining:<br>
+            <input type="date" required><br><br>
+            Contact number:<br>
+            <input type="number" required><br><br>
+            </form>
+        </div>
+
+    </div>
+</html>

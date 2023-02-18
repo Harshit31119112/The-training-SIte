@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Practice 1</title>
+    <style>
+        /* navbar of home page */
+.main{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid blue;
+}
+.main img{
+
+    width: 5%; 
+}
+
+.main li{
+    display: inline;
+    list-style: none;
+    padding: 1px;
+    
+}
+.main a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: auto;
+}
+/* media querry for the html page */
+@media only screen and (max-width:600px )
+{
+    .main{
+        text-align: left;
+        background-color: black;
+        color: white;
+        display: block;
+        border-bottom: 1px solid blue;
+        
+    }
+    .main img{
+        
+        width: 20%; 
+        padding: 3%;
+    }
+    
+    .main li{
+        display: block;
+        list-style: none;
+        padding: 1px;
+        
+    }
+    .main a{
+        text-decoration: none;
+        color: aliceblue;
+    }  
+}
+
+.leftmain{
+    display: flex;
+    height: 200%;
+}
+
+.leftbar{
+    height: 700px;
+    width: 20%;
+    background-color:gainsboro ;
+}
+
+@media only screen and (max-width:600px )
+{
+    .leftbar{
+        width: 100%;
+        background-color:gainsboro ;
+        height: 40%;
+    }
+    .leftmain{
+        display: block;
+    }
+  
+
+}
+table, th, td {
+         border:1px solid rgb(28, 28, 34);
+         }
+.practice1{
+       
+        margin-left: 2%;
+    }         
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <img src="/Source/radix.png" alt="logo image">
+        <div class="nav">
+            <ul>
+                <li><a href="/Source/index.html">Home</a></li>
+                <li><a href="/Source/html.html">HTML</a></li>
+                <li><a href="/Source/css.">CSS</a></li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">Javascript</a></li>
+                <li><a href="">JQuery</a></li>
+                <li><a href="">Mini Project</a></li>
+                <li><a href="">Sql</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftmain">
+        <div class="leftbar">
+            <ul>
+                <li>Day 3
+                    <ul>
+                        <li>Assignment 
+                            <ul>
+                                <li>
+                                <a href="/Source/html--assignment1.html"> Assignment 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Practice
+                            <ul>
+                                <li><a href="/Source/html-practice1.html">Practice 1</a></li>
+                                <li><a href="/Source/html--practice2.html">Practice 2</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+        <div class="practice1">
+            <h2>Student Report Card</h2>
+            <table style="width:50%">
+                <tr>
+                    <th>Name</th>
+                    <th>RollNo</th>
+                    <th>Year Of Passing</th>
+                    <th>Maths</th>
+                    <th>Physics</th>
+                    <th>Chemestry</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>Harshit</td>
+                    <td>0007</td>
+                    <td>2023</td>
+                    <td>99</td>
+                    <td>99</td>
+                    <td>99</td>
+                    <td>99</td>
+                </tr>
+                <tr><td>arpit</td>
+                    <td>1032</td>
+                    <td>2023</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>31</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</html>

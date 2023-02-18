@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Practice 2</title>
+    <style>
+        /* navbar of home page */
+.main{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid blue;
+}
+.main img{
+
+    width: 5%; 
+}
+
+.main li{
+    display: inline;
+    list-style: none;
+    padding: 1px;
+    
+}
+.main a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: auto;
+}
+/* media querry for the html page */
+@media only screen and (max-width:600px )
+{
+    .main{
+        text-align: left;
+        background-color: black;
+        color: white;
+        display: block;
+        border-bottom: 1px solid blue;
+        
+    }
+    .main img{
+        
+        width: 20%; 
+        padding: 3%;
+    }
+    
+    .main li{
+        display: block;
+        list-style: none;
+        padding: 1px;
+        
+    }
+    .main a{
+        text-decoration: none;
+        color: aliceblue;
+    }  
+}
+
+.leftmain{
+    display: flex;
+    height: 200%;
+}
+
+.leftbar{
+    height: 1000px;
+    width: 20%;
+    background-color:gainsboro ;
+}
+
+@media only screen and (max-width:600px )
+{
+    .leftbar{
+        height: 150px;
+        width: 100%;
+        background-color:gainsboro ;
+    }
+    .leftmain{
+        display: block;
+        
+    }
+    
+}
+.practice2{
+        
+        margin-left: 2%;
+    }  
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <img src="/Source/radix.png" alt="logo image">
+        <div class="nav">
+            <ul>
+                <li><a href="/Source/index.html">Home</a></li>
+                <li><a href="/Source/html.html">HTML</a></li>
+                <li><a href="/Source/css.">CSS</a></li>
+                <li><a href="">Bootstrap</a></li>
+                <li><a href="">Javascript</a></li>
+                <li><a href="">JQuery</a></li>
+                <li><a href="">Mini Project</a></li>
+                <li><a href="">Sql</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftmain">
+        <div class="leftbar">
+            <ul>
+                <li>Day 3
+                    <ul>
+                        <li>Assignment 
+                            <ul>
+                                <li>
+                                <a href="/Source/html--assignment1.html"> Assignment 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Practice
+                            <ul>
+                                <li><a href="/Source/html-practice1.html">Practice 1</a></li>
+                                <li><a href="/Source/html--practice2.html">Practice 2</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+        <div class="practice2">
+            <div id="page">
+                <div class="contact-info-box">
+                <h1> <span >Harshit Goyal </span></h1>
+                    <h3 class="job-title" >
+                        <u>IT Manager</u></h3>
+                    <h4 class="contact-details">Phone:+91-1234567891</h4>
+                    <p class="email"> goyalharshitmt@gmail.com</p>
+                    <p class=" linkdilenn profile"><a href="https://tutorial.dev.radixweb.net/calendar">linkdilenn profile</a></p>
+                </div>
+                
+                
+                        
+                <div class="carri-object" >
+                        <h2 >Carrier Objective</h2>
+                        <h4>
+                            To take a challenging and managerial role in the field of Computer programming and implement the expertise and experience gained in this field to develop complex project with efficiency and quality. 
+                        </h4>    
+                </div>
+    
+    
+                <div class="education-qualification">
+                    <h2 > Education-qualification</h2>
+                    <table  class=" tab" border="5px">
+                        <caption>Education-qualification</caption>
+                        <tr>
+                        
+                            <th>
+                                Year
+                            </th>
+                            <th>
+                                Institute
+                            </th>                     
+                        
+                            <th>
+                                Percentage
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                              2017
+                            </td>
+                            
+                            <td>
+                               <strong>Ssc:</strong> Saint mary's school
+                            </td>
+                            
+                            <td>
+                            85%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               2019
+                            </td>
+                            
+                            <td>
+                             <strong> Hsc:</strong>J.S.public school
+                            </td>
+                            
+                            <td>
+                             81%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            2023
+                            </td>
+                            
+                            <td>
+                            SRCEM
+                            </td>
+                            
+                            <td>
+                            87%
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2 >Skills</h2>
+                    <h4>1.) Python</h4>
+                    <h4>2.) HTML </h4>
+                    <h4>3.) Css</h4>
+                    <h4>4.) Javascript</h4>
+                    <video id="video" controls preload="metadata">
+                        <source src="resources/myvideo.mp4" type="video/mp4">
+                        <source src="resources/myvideo.webm" type="video/webm">
+                        <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                        <track label="Deutsch" kind="captions" srclang="de" src="resources/myvideo-de.vtt">
+                        <track label="Español" kind="captions" srclang="es" src="resources/myvideo-es.vtt">
+                     </video>
+                    <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
